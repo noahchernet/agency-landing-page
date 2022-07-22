@@ -19,25 +19,32 @@ const NavBar = (props: Props) => {
     <HStack pt={"6.06rem"} px={"11.875rem"} justify="space-between">
       <HStack>
         <Image src="/assets/company_logo.png" alt="teamflow-logo" />
-        <Heading fontSize={"1.875rem"}>TeamFlow</Heading>
+        <Heading fontSize={"1.875rem"} color={"white"}>
+          TeamFlow
+        </Heading>
       </HStack>
       <HStack spacing={"2.5rem"}>
         <HStack cursor={"pointer"}>
-          <Link>Product</Link>
+          <Link color={"white"}>Product</Link>
           <DownwardArrow />
         </HStack>
         <HStack cursor={"pointer"}>
-          <Link>Solution</Link>
+          <Link color={"white"}>Solution</Link>
           <DownwardArrow />
         </HStack>
-        <Link cursor={"pointer"}>Enterprise</Link>
-        <Link cursor={"pointer"}>Pricing</Link>
+        <Link color={"white"}>Enterprise</Link>
+        <Link color={"white"}>Pricing</Link>
       </HStack>
       <HStack spacing={"2.813rem"}>
         <Button color="#757575" variant="link">
           Log In
         </Button>
-        <Button color="brand.darkgray" bg="brand.yellow" px={"2rem"}>
+        <Button
+          color="brand.darkgray"
+          bg="brand.yellow"
+          px={"2rem"}
+          _hover={{ bg: "#ffd91d" }}
+        >
           Sign Up
         </Button>
       </HStack>
