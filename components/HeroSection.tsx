@@ -7,23 +7,17 @@ type Props = {};
 const HeroSection = (props: Props) => {
   return (
     <Box as="section" bg="white">
-      <Box
-        minH={"120vh"}
-        bg={"brand.purple"}
-        clipPath={"polygon(0% 0%, 69% 0%, 52% 100%, 0% 100%)"}
-        zIndex={"-1"}
-      />
-      <Box
-        minH={"120vh"}
-        bg={"#FAFAFF"}
-        clipPath={"polygon(69% 0%, 100% 0%, 100% 100%, 52% 100%)"}
-        zIndex={"2"}
-        position={"relative"}
-        bottom={"120vh"}
-      />
+      <Box bg="#FAFAFF">
+        <Box
+          minH={"100vh"}
+          bg={"brand.purple"}
+          clipPath={"polygon(0% 0%, 66% 0%, 49% 100%, 0% 100%)"}
+          zIndex={"-1"}
+        />
+      </Box>
       <Box
         position={"relative"}
-        bottom={"240vh"}
+        bottom={"100vh"}
         zIndex={"3"}
         mt={"6rem"}
         mx={"10.9rem"}
