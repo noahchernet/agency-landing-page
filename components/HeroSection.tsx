@@ -10,11 +10,124 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import NavBar from "./NavBar";
+import { AiFillStar } from "react-icons/ai";
+import { FaBeer } from "react-icons/fa";
 
 type Props = {};
 
-const Profiles = (props: Props) => {
-  return <></>;
+const ProfileLucy = (props: Props) => {
+  return (
+    <HStack spacing={0} justify={"space-between"}>
+      {/* Profile picture and text  */}
+      <HStack mr={"-19rem"}>
+        <Text
+          bg={"white"}
+          color={"#494949"}
+          borderRadius={"2rem"}
+          py={"0.7rem"}
+          px={"5.5rem"}
+          fontSize={"1.875rem"}
+          fontWeight={"bold"}
+          position={"relative"}
+          top={"4rem"}
+          zIndex={"3"}
+        >
+          Lucy
+        </Text>
+        <Image
+          src="/assets/picture-lucy.png"
+          alt="Picture of Lucy"
+          position={"relative"}
+          right={"8.5rem"}
+          bottom={"0.75rem"}
+          zIndex={"2"}
+          filter={"drop-shadow(5px 17px 41px rgba(41,43,107,0.3))"}
+          bgImage={"url()"}
+        />
+        <Box position={"relative"} right={"26.85rem"} bottom={"1rem"}>
+          <svg
+            width="312"
+            height="312"
+            viewBox="0 0 312 312"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="156.287"
+              cy="156.086"
+              r="151.85"
+              stroke="white"
+              strokeWidth="6.90229"
+              strokeDasharray="51.77 51.77"
+            />
+          </svg>
+        </Box>
+      </HStack>
+      {/* Comment and rating */}
+      <Box pl={"8rem"} position={"relative"}>
+        <VStack
+          position={"absolute"}
+          top={"1rem"}
+          zIndex={3}
+          align="left"
+          pl={"1.6rem"}
+          spacing={"0.01rem"}
+        >
+          <Text
+            color={"white"}
+            bg={"#3ADAD9"}
+            fontSize={"1.2rem"}
+            py={"0.18rem"}
+            px={"1rem"}
+            borderRadius={"0.4rem"}
+            ml={"12.4rem"}
+            mt={"0.9rem"}
+            mb={"-0.9rem"}
+          >
+            Done
+          </Text>
+          <Text fontSize="1rem" color="#6C71A1">
+            Lucy Niana
+          </Text>
+          <Text fontSize="1.3rem" fontWeight="bold" color="#2B3377">
+            Develop Communication Plan
+          </Text>
+          <HStack spacing={"1px"}>
+            <AiFillStar size="1.38rem" color="#FFCD1A" />
+            <AiFillStar size="1.38rem" color="#FFCD1A" />
+            <AiFillStar size="1.38rem" color="#FFCD1A" />
+            <AiFillStar size="1.38rem" color="#FFCD1A" />
+            <AiFillStar size="1.38rem" color="#CCCCCC" />
+          </HStack>
+          <Image
+            src="assets/cursor-yellow-right.svg"
+            alt="mouse-cursor"
+            h={"3rem"}
+            pl={"14rem"}
+            // pt={"2rem"}
+          />
+        </VStack>
+        <Image
+          h={"10.75rem"}
+          src="/assets/message.svg"
+          alt="comment_bubble"
+          filter={"drop-shadow(0 75px 121px rgba(0,0,0,0.05))"}
+        />
+      </Box>
+    </HStack>
+  );
+};
+
+const ProfileMark = (props: Props) => {
+  return (
+    <HStack>
+      <Image
+        src="/assets/message-type-2.svg"
+        alt="comment-view"
+        filter={"drop-shadow(0 75px 121px rgba(0,0,0,0.05))"}
+      />
+    </HStack>
+  );
 };
 
 const HeroSection = (props: Props) => {
@@ -51,7 +164,7 @@ const HeroSection = (props: Props) => {
             >
               👋 Welcome to TeamFlow
             </Text>
-            <Heading fontSize="3.4rem" color="white" maxW="35rem">
+            <Heading fontSize="3.4rem" color="white" maxW="45rem">
               Work the way that works for you
             </Heading>
             <svg
@@ -86,108 +199,9 @@ const HeroSection = (props: Props) => {
               Get Started
             </Button>
           </VStack>
-          <VStack>
-            <HStack spacing={0}>
-              {/* Profile picture and text  */}
-              <HStack>
-                <Text
-                  bg={"white"}
-                  color={"#494949"}
-                  borderRadius={"2rem"}
-                  py={"0.7rem"}
-                  px={"5.5rem"}
-                  fontSize={"1.875rem"}
-                  fontWeight={"bold"}
-                  position={"relative"}
-                  top={"4rem"}
-                  zIndex={"3"}
-                >
-                  Lucy
-                </Text>
-                <Image
-                  src="/assets/picture-lucy.png"
-                  alt="Picture of Lucy"
-                  position={"relative"}
-                  right={"8.5rem"}
-                  bottom={"0.75rem"}
-                  zIndex={"2"}
-                  filter={"drop-shadow(5px 17px 41px rgba(41,43,107,0.3))"}
-                  bgImage={"url()"}
-                />
-                <Box position={"relative"} right={"26.85rem"} bottom={"1rem"}>
-                  <svg
-                    width="312"
-                    height="312"
-                    viewBox="0 0 312 312"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="156.287"
-                      cy="156.086"
-                      r="151.85"
-                      stroke="white"
-                      strokeWidth="6.90229"
-                      strokeDasharray="51.77 51.77"
-                    />
-                  </svg>
-                </Box>
-              </HStack>
-              {/* Comment and rating */}
-              <Box>
-                {/* <Text>Filler</Text> */}
-                <svg
-                  width="619"
-                  height="397"
-                  viewBox="0 0 619 397"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g filter="url(#filter0_d_4620_158)">
-                    <path
-                      d="M121.909 65.2819C121.909 55.3407 129.968 47.2819 139.909 47.2819H478.977C488.918 47.2819 496.977 55.3407 496.977 65.2819V168.959C496.977 178.9 488.918 186.959 478.977 186.959H160.416C156.373 186.959 152.47 188.438 149.443 191.116L143.267 196.58C134.976 203.915 121.909 198.029 121.909 186.959V186.959V65.2819Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_d_4620_158"
-                      x="0.0121613"
-                      y="0.398392"
-                      width="618.862"
-                      height="396.342"
-                      filterUnits="userSpaceOnUse"
-                      colorInterpolationFilters="sRGB"
-                    >
-                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feColorMatrix
-                        in="SourceAlpha"
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        result="hardAlpha"
-                      />
-                      <feOffset dy="75.0135" />
-                      <feGaussianBlur stdDeviation="60.9485" />
-                      <feColorMatrix
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in2="BackgroundImageFix"
-                        result="effect1_dropShadow_4620_158"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="effect1_dropShadow_4620_158"
-                        result="shape"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
-              </Box>
-            </HStack>
+          <VStack spacing={"4.12rem"}>
+            <ProfileLucy />
+            <ProfileMark />
           </VStack>
         </Stack>
       </Box>
