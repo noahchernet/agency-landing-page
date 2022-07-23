@@ -120,12 +120,63 @@ const ProfileLucy = (props: Props) => {
 
 const ProfileMark = (props: Props) => {
   return (
-    <HStack>
-      <Image
-        src="/assets/message-type-2.svg"
-        alt="comment-view"
-        filter={"drop-shadow(0 75px 121px rgba(0,0,0,0.05))"}
-      />
+    <HStack position={"relative"}>
+      <Box position={"relative"} bottom={"4rem"}>
+        <Image
+          src="/assets/message-type-2.svg"
+          alt="comment-view"
+          filter={"drop-shadow(0 75px 121px rgba(0,0,0,0.05))"}
+        />
+        <VStack
+          position={"relative"}
+          bottom={"10.75rem"}
+          align="left"
+          pl={"1.875rem"}
+        >
+          <Text
+            color={"white"}
+            bg={"#FD9B79"}
+            fontSize={"1.2rem"}
+            py={"0.18rem"}
+            px={"1.4rem"}
+            borderRadius={"0.4rem"}
+            mr={"1rem"}
+            ml={"18.4rem"}
+            mt={"0.9rem"}
+            mb={"-0.9rem"}
+          >
+            Pending
+          </Text>
+          <Text fontSize="1rem" color="#6C71A1">
+            Mark Anderson{" "}
+          </Text>
+          <Text fontSize="1.3rem" fontWeight="bold" color="#2B3377">
+            Update Contract Agreement
+          </Text>
+          <HStack spacing={"1px"}>
+            <AiFillStar size="1.38rem" color="#FFCD1A" />
+            <AiFillStar size="1.38rem" color="#FFCD1A" />
+            <AiFillStar size="1.38rem" color="#FFCD1A" />
+            <AiFillStar size="1.38rem" color="#FFCD1A" />
+            <AiFillStar size="1.38rem" color="#FFCD1A" />
+          </HStack>
+        </VStack>
+      </Box>
+      <Box position={"relative"} bottom={"2.75rem"} left={"4rem"}>
+        <Image
+          src="/assets/picture-mark.png"
+          alt="picture-of-mark"
+          bgImage={"/assets/dotted-circle.png"}
+        />
+
+        <Image
+          src="/assets/dotted-circle.svg"
+          alt="dotted-circle"
+          position={"relative"}
+          bottom={"13rem"}
+          right={"1rem"}
+        />
+      </Box>
     </HStack>
   );
 };
@@ -199,7 +250,7 @@ const HeroSection = (props: Props) => {
               Get Started
             </Button>
           </VStack>
-          <VStack spacing={"4.12rem"}>
+          <VStack spacing={"1.32rem"}>
             <ProfileLucy />
             <ProfileMark />
           </VStack>
