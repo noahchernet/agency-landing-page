@@ -176,6 +176,21 @@ const ProfileMark = (props: Props) => {
           bottom={"13rem"}
           right={"1rem"}
         />
+        <Text
+          position={"relative"}
+          bottom={"22rem"}
+          left={"10rem"}
+          color={"#279E73"}
+          bg={"white"}
+          px={"1.25rem"}
+          py={"0.3rem"}
+          borderRadius={"2rem"}
+          maxW={"5.7rem"}
+          textAlign={"center"}
+          fontWeight={"bold"}
+        >
+          Mark
+        </Text>
       </Box>
     </HStack>
   );
@@ -220,6 +235,38 @@ const HeroSection = (props: Props) => {
             position={"absolute"}
             bottom={"-3.5rem"}
             zIndex={"-1"}
+          />
+          <Image
+            src="/assets/purple-circle.svg"
+            alt="decoration-purple-circle"
+            position={"absolute"}
+            left={"33.4rem"}
+            zIndex={"-1"}
+          />
+          <Image
+            src="/assets/blue-square.svg"
+            alt="decoration-blue-square"
+            position={"absolute"}
+            left={"45rem"}
+            mt={"2rem"}
+            zIndex={"-1"}
+          />
+          <Image
+            src="/assets/cursor-blue-left.svg"
+            alt="decoration-cursor"
+            h={"3rem"}
+            position={"absolute"}
+            top={"28rem"}
+            left={"38rem"}
+            zIndex={"-1"}
+          />
+          <Image
+            src="/assets/orange-triangle.svg"
+            alt="decoration-triangle"
+            h={"2rem"}
+            position={"absolute"}
+            bottom={"13rem"}
+            left={"35rem"}
           />
         </Box>
       </Box>
