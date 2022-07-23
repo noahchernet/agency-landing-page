@@ -38,7 +38,11 @@ const CompaniesSection = (props: Props) => {
           See why over 100,000 teams choose TeamFlow
         </Text>
         <Spacer />
-        <Image src="/assets/company_hulu.png" alt="hulu_logo" h={"4rem"} />
+        <Image
+          src="/assets/company_hulu.png"
+          alt="hulu_logo"
+          h={{ base: "2rem", md: "4rem" }}
+        />
         <Image src="/assets/company_bbc.png" alt="bbc_logo" h={"4rem"} />
         <Image
           src="/assets/company_universal.png"

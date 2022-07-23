@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import CompaniesSection from "../components/CompaniesSection";
 import HeroSection from "../components/HeroSection";
 import NavBar from "../components/NavBar";
+import WhatCanYouDoSection from "../components/WhatCanYouDoSection";
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <HeroSection />
       <Box position={"absolute"} top={"100vh"}>
         <CompaniesSection />
+        <WhatCanYouDoSection />
       </Box>
     </Box>
   );
