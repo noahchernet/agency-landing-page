@@ -16,10 +16,10 @@ type Props = {};
 
 const NavBar = (props: Props) => {
   return (
-    <HStack pt={"6.06rem"} px={"11.875rem"} justify="space-between">
+    <HStack justify="space-between">
       <HStack>
         <Image src="/assets/company_logo.png" alt="teamflow-logo" />
-        <Heading fontSize={"1.875rem"} color={"white"}>
+        <Heading fontSize={"1.875rem"} color={"white"} as="h1">
           TeamFlow
         </Heading>
       </HStack>
