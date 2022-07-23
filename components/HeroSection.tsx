@@ -184,13 +184,44 @@ const ProfileMark = (props: Props) => {
 const HeroSection = (props: Props) => {
   return (
     <Box as="section" bg="white">
-      <Box bg="#FAFAFF">
+      <Box bg="#FAFAFF" position="relative">
         <Box
           minH={"100vh"}
           bg={"brand.purple"}
           clipPath={"polygon(0% 0%, 67% 0%, 52% 100%, 0% 100%)"}
           zIndex={"-1"}
-        />
+        >
+          <Image
+            src="/assets/first-section-bg-1.svg"
+            alt="cloudy-facade"
+            w={"50rem"}
+            zIndex={"-1"}
+          />
+          <Image
+            src="/assets/first-section-bg-2.svg"
+            alt="cloudy-facade"
+            w={"60rem"}
+            position={"absolute"}
+            top={0}
+            zIndex={"-1"}
+          />
+          <Image
+            src="/assets/first-section-bg-3.svg"
+            alt="cloudy-facade"
+            w={"60rem"}
+            position={"absolute"}
+            bottom={"-8rem"}
+            zIndex={"-1"}
+          />
+          <Image
+            src="/assets/first-section-bg-4.svg"
+            alt="cloudy-facade"
+            w={"60rem"}
+            position={"absolute"}
+            bottom={"-3.5rem"}
+            zIndex={"-1"}
+          />
+        </Box>
       </Box>
       <Box
         position={"relative"}
