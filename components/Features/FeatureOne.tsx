@@ -7,6 +7,7 @@ import {
   Spacer,
   Text,
   VStack,
+  Center,
 } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
@@ -16,16 +17,18 @@ type Props = {};
 function FeatureOne({}: Props) {
   return (
     <Box mt={"10rem"} px={"11.87rem"}>
-      <HStack
-        justify={"center"}
-        mb={"6.875rem"}
-        as={motion.div}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-      >
-        <Heading color="#565656">Our</Heading>
-        <Heading color="brand.yellow">Features</Heading>
-      </HStack>
+      <Center>
+        <Heading
+          mb={"6.875rem"}
+          maxW={"40rem"}
+          as={motion.h1}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+        >
+          <span style={{ color: "#FFCA1D" }}>Our</span>{" "}
+          <span style={{ color: "#565656" }}>Features</span>
+        </Heading>
+      </Center>
       <Stack
         direction={{ base: "column-reverse", md: "row" }}
         align={"center"}
