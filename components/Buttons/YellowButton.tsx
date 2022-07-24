@@ -12,6 +12,7 @@ const YellowButton = (props: Props) => {
       bg="brand.yellow"
       px={"2rem"}
       _hover={{ bg: "#ffd91d" }}
+      _active={{ bg: "#ffe666" }}
     >
       {props.text}
     </Button>

@@ -6,6 +6,7 @@ import FeatureOne from "../components/Features/FeatureOne";
 import WhatCanYouDoSection from "../components/WhatCanYouDoSection";
 import FeatureTwo from "../components/Features/FeatureTwo";
 import IntegrateSection from "../components/IntegrateSection";
+import FeatureFour from "../components/Features/FeatureFour";
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
           <FeatureTwo />
         </Box>
         <IntegrateSection />
+        <FeatureFour />
       </VStack>
     </Box>
   );
