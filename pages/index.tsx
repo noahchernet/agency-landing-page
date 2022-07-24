@@ -1,8 +1,9 @@
-import { Box } from "@chakra-ui/react";
+import { Box, VStack } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import CompaniesSection from "../components/CompaniesSection";
 import HeroSection from "../components/HeroSection";
 import NavBar from "../components/NavBar";
+import OurFeatures from "../components/OurFeatures";
 import WhatCanYouDoSection from "../components/WhatCanYouDoSection";
 
 const Home: NextPage = () => {
@@ -10,10 +11,17 @@ const Home: NextPage = () => {
     <Box bg="white">
       {/* <NavBar /> */}
       <HeroSection />
-      <Box position={"absolute"} top={"100vh"}>
+      <VStack
+        position={"absolute"}
+        top={"100vh"}
+        mx={"11.87rem"}
+        spacing={"8.625rem"}
+        mt={"8.625rem"}
+      >
         <CompaniesSection />
         <WhatCanYouDoSection />
-      </Box>
+        <OurFeatures />
+      </VStack>
     </Box>
   );
 };

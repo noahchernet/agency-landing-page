@@ -1,12 +1,19 @@
 import { Box, Heading, Stack, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 const WhatCanYouDoSection = (props: Props) => {
   return (
-    <Box mt={"10rem"} mx={"11.87rem"}>
-      <HStack justify={"center"} mb={"6.875rem"}>
+    <Box mt={"10rem"}>
+      <HStack
+        justify={"center"}
+        mb={"6.875rem"}
+        as={motion.div}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
         <Heading color="#565656">What can</Heading>
         <Heading color="brand.yellow">you do?</Heading>
       </HStack>

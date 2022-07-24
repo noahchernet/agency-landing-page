@@ -5,7 +5,7 @@ type Props = {};
 
 const CompaniesSection = (props: Props) => {
   return (
-    <Box mx={"12.1rem"} mt={"8.625rem"}>
+    <Box>
       <svg
         width="65"
         height="6"
