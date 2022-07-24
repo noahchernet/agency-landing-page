@@ -28,7 +28,10 @@ const IntegrateSection = (props: Props) => {
           with your existing tools in a few clicks
         </span>
       </Heading>
-      <Stack direction={{ base: "column", md: "row" }} spacing={"5.75rem"}>
+      <Stack
+        direction={{ base: "column", md: "row" }}
+        spacing={{ base: "2rem", md: "5.75rem" }}
+      >
         <Image src={"/assets/company_zoom.png"} alt="zoom_logo" w={"8rem"} />
         <Image
           src={"/assets/company_adobe_cloud.png"}
