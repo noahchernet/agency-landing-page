@@ -6,7 +6,7 @@ type Props = {};
 
 const WhatCanYouDoSection = (props: Props) => {
   return (
-    <Box mt={"10rem"}>
+    <Box mt={"10rem"} px={"11.87rem"}>
       <HStack
         justify={"center"}
         mb={"6.875rem"}

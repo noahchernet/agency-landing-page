@@ -15,23 +15,17 @@ const Home: NextPage = () => {
       <VStack
         position={"absolute"}
         top={"100vh"}
-        mx={"11.87rem"}
+        // mx={"11.87rem"}
         spacing={"8.625rem"}
         mt={"8.625rem"}
       >
         <CompaniesSection />
         <WhatCanYouDoSection />
         <FeatureOne />
+        <Box px={"11.87rem"} bg={"#FAFAFF"}>
+          <FeatureTwo />
+        </Box>
       </VStack>
-      <Box
-        position={"absolute"}
-        top={"300vh"}
-        w={"full"}
-        px={"11.87rem"}
-        bg={"#FAFAFF"}
-      >
-        <FeatureTwo />
-      </Box>
     </Box>
   );
 };
