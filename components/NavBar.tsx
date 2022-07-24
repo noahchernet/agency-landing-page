@@ -11,6 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import DownwardArrow from "./Buttons/DownwardArrow";
+import YellowButton from "./Buttons/YellowButton";
 
 type Props = {};
 
@@ -39,14 +40,15 @@ const NavBar = (props: Props) => {
         <Button color="#757575" variant="link">
           Log In
         </Button>
-        <Button
+        {/* <Button
           color="brand.darkgray"
           bg="brand.yellow"
           px={"2rem"}
           _hover={{ bg: "#ffd91d" }}
         >
           Sign Up
-        </Button>
+        </Button> */}
+        <YellowButton text={"Sign Up"} />
       </HStack>
     </HStack>
   );
