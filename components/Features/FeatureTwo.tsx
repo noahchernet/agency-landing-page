@@ -17,8 +17,6 @@ const FeatureTwo = (props: Props) => {
       direction={{ base: "column-reverse", md: "row" }}
       align={"center"}
       spacing={"7.7rem"}
-      // px={"-8.625rem"}
-      // w={"130%"}
     >
       <VStack align="left" spacing={"1.25rem"}>
         <Heading color={"#4A4A4A"} fontSize={"2.5rem"}>
@@ -188,8 +186,6 @@ const FeatureTwo = (props: Props) => {
           mt={"3.5rem"}
           zIndex={"2"}
           position={"relative"}
-          // top={"0"}
-          // right={"0"}
         />
       </Box>
       {/* <Image src="/assets/our_features.svg" alt="our_features"  /> */}
