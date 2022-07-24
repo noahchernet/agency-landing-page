@@ -3,8 +3,9 @@ import type { NextPage } from "next";
 import CompaniesSection from "../components/CompaniesSection";
 import HeroSection from "../components/HeroSection";
 import NavBar from "../components/NavBar";
-import OurFeatures from "../components/OurFeatures";
+import FeatureOne from "../components/Features/FeatureOne";
 import WhatCanYouDoSection from "../components/WhatCanYouDoSection";
+import FeatureTwo from "../components/Features/FeatureTwo";
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +21,8 @@ const Home: NextPage = () => {
       >
         <CompaniesSection />
         <WhatCanYouDoSection />
-        <OurFeatures />
+        <FeatureOne />
+        <FeatureTwo />
       </VStack>
     </Box>
   );
