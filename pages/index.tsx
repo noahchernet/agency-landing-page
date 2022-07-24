@@ -7,6 +7,7 @@ import WhatCanYouDoSection from "../components/WhatCanYouDoSection";
 import FeatureTwo from "../components/Features/FeatureTwo";
 import IntegrateSection from "../components/IntegrateSection";
 import FeatureThree from "../components/Features/FeatureThree";
+import FeatureFour from "../components/Features/FeaturFour";
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +27,9 @@ const Home: NextPage = () => {
         </Box>
         <IntegrateSection />
         <FeatureThree />
+        <Box px={"11.87rem"} bg={"#FAFAFF"}>
+          <FeatureFour />
+        </Box>
       </VStack>
     </Box>
   );
