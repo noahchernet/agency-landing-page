@@ -22,8 +22,16 @@ const Home: NextPage = () => {
         <CompaniesSection />
         <WhatCanYouDoSection />
         <FeatureOne />
-        <FeatureTwo />
       </VStack>
+      <Box
+        position={"absolute"}
+        top={"300vh"}
+        w={"full"}
+        px={"11.87rem"}
+        bg={"#FAFAFF"}
+      >
+        <FeatureTwo />
+      </Box>
     </Box>
   );
 };
