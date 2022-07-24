@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 type Props = {};
 
-function FeatureFour({}: Props) {
+function FeatureThree({}: Props) {
   return (
     <Stack
       direction={{ base: "column-reverse", md: "row" }}
@@ -61,4 +61,4 @@ function FeatureFour({}: Props) {
   );
 }
 
-export default FeatureFour;
+export default FeatureThree;
