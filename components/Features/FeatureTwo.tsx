@@ -188,7 +188,6 @@ const FeatureTwo = (props: Props) => {
           position={"relative"}
         />
       </Box>
-      {/* <Image src="/assets/our_features.svg" alt="our_features"  /> */}
     </Stack>
   );
 };
