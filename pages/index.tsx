@@ -31,9 +31,9 @@ const Home: NextPage = () => {
         </Box> */}
         <IntegrateSection />
         <FeatureThree />
-        <Box w={"full"} bg={"#FAFAFF"}>
-          <FeatureFour />
-        </Box>
+        {/* <Box w={"full"} bg={"#FAFAFF"}> */}
+        <FeatureFour />
+        {/* </Box> */}
         <FeatureFive />
         <ClientTestimonials />
         <Box bg={"#FAFAFF"} w={"full"}>

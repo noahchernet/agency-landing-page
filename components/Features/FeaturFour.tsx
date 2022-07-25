@@ -6,12 +6,13 @@ type Props = {};
 const FeatureTwo = (props: Props) => {
   return (
     <Stack
+      w={"full"}
+      bg={"#FAFAFF"}
       direction={{ base: "column-reverse", xl: "row" }}
-      py={{ base: "4rem", xl: "none" }}
       align={"center"}
       spacing={{ base: "2rem" }}
-      // spacing={{ bapx={"11.87rem"}se: "3rem", xl: "7.7rem" }}
-      px={{ base: "3rem", xl: "11.87rem" }}
+      px={{ base: "3rem", md: "11.87rem" }}
+      py={{ base: "4rem", xl: "none" }}
     >
       <VStack align="left" spacing={"1.25rem"}>
         <Heading color={"#4A4A4A"} fontSize={"2.5rem"}>
@@ -34,7 +35,7 @@ const FeatureTwo = (props: Props) => {
             strokeLinecap="round"
           />
         </svg>
-        <Text color={"#575757"} fontSize={"1.5rem"} maxW={"42rem"}>
+        <Text color={"#575757"} fontSize={"1.5rem"} maxW={{ xl: "42rem" }}>
           View data as a map, calendar, timeline, kanban, and more. The
           easy-to-use, visual interface lets any team member jump in and get
           started, no training required.
