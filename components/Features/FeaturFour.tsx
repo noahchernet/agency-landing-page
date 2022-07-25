@@ -1,12 +1,4 @@
-import {
-  Stack,
-  Image,
-  Spacer,
-  VStack,
-  Heading,
-  Text,
-  Box,
-} from "@chakra-ui/react";
+import { Stack, Image, Spacer, VStack, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 
 type Props = {};
