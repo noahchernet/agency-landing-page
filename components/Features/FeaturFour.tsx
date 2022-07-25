@@ -9,7 +9,9 @@ const FeatureTwo = (props: Props) => {
       direction={{ base: "column-reverse", xl: "row" }}
       py={{ base: "4rem", xl: "none" }}
       align={"center"}
-      spacing={{ base: "3rem", xl: "7.7rem" }}
+      spacing={{ base: "2rem" }}
+      // spacing={{ bapx={"11.87rem"}se: "3rem", xl: "7.7rem" }}
+      px={{ base: "3rem", xl: "11.87rem" }}
     >
       <VStack align="left" spacing={"1.25rem"}>
         <Heading color={"#4A4A4A"} fontSize={"2.5rem"}>
@@ -42,7 +44,7 @@ const FeatureTwo = (props: Props) => {
       <Image
         src="/assets/calendar_map_timeline.png"
         alt="calendar_map_timeline"
-        h={{ base: "auto", lg: "30rem", xl: "35rem" }}
+        h={{ base: "20rem", md: "25rem", lg: "30rem", xl: "40rem" }}
       />
     </Stack>
   );

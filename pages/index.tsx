@@ -16,7 +16,7 @@ import Footer from "../components/Footer";
 const Home: NextPage = () => {
   return (
     <Box bg="white">
-      <HeroSection />
+      {/* <HeroSection /> */}
       <VStack
         position={"absolute"}
         top={"100vh"}
@@ -26,12 +26,12 @@ const Home: NextPage = () => {
         <CompaniesSection />
         <WhatCanYouDoSection />
         <FeatureOne />
-        <Box px={"11.87rem"} bg={"#FAFAFF"}>
+        {/* <Box px={"11.87rem"} bg={"#FAFAFF"}>
           <FeatureTwo />
-        </Box>
+        </Box> */}
         <IntegrateSection />
         <FeatureThree />
-        <Box px={"11.87rem"} bg={"#FAFAFF"}>
+        <Box w={"full"} bg={"#FAFAFF"}>
           <FeatureFour />
         </Box>
         <FeatureFive />
