@@ -2,12 +2,10 @@ import {
   Box,
   Image,
   Stack,
-  HStack,
   Heading,
   Spacer,
   Text,
   VStack,
-  Center,
 } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
