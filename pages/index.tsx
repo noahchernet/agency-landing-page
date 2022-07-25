@@ -11,6 +11,7 @@ import FeatureFour from "../components/Features/FeaturFour";
 import FeatureFive from "../components/Features/FeatureFive";
 import ClientTestimonials from "../components/ClientTestimonials";
 import SubscribeSection from "../components/SubscribeSection";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
         <Box bg={"#FAFAFF"} w={"full"}>
           <SubscribeSection />
         </Box>
+        <Footer />
       </VStack>
     </Box>
   );
