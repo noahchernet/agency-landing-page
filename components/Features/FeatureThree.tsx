@@ -17,21 +17,21 @@ type Props = {};
 function FeatureThree({}: Props) {
   return (
     <Stack
-      direction={{ base: "column-reverse", md: "row" }}
+      direction={{ base: "column", xl: "row" }}
       align={"center"}
       spacing={"7.7rem"}
-      mt={"10rem"}
+      mt={{ base: "2rem", xl: "10rem" }}
       px={"11.87rem"}
     >
       <Image
         src="/assets/save_time_picture_woman.png"
         alt="save_time_picture_woman"
-        h="25rem"
+        h={{ base: "auto", xl: "25rem" }}
       />
       <Spacer />
       <VStack align="left" spacing={"1.25rem"}>
         <Heading color={"#4A4A4A"} fontSize={"2.5rem"}>
-          Manage everything in one workspace
+          Save time with Automations
         </Heading>
         <svg
           width="65"
@@ -51,10 +51,10 @@ function FeatureThree({}: Props) {
           />
         </svg>
         <Text color={"#575757"} fontSize={"1.5rem"}>
-          Planning, tracking and delivering your team&apos;s best work has
-          never been easier. An integrated workspace that&apos;s simple to use,
-          TeamFlow lets you spend less time managing your work and more time
-          actually doing it.
+          Automate the repetitive work in seconds so you can avoid human error
+          and focus on what matters. It gives the impression of software that
+          its highly automated which implies that it is good for client for who
+          want to save time and manage team members easily.
         </Text>
       </VStack>
     </Stack>
