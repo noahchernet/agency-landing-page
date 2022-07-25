@@ -69,6 +69,7 @@ function FeatureFive({}: Props) {
           </HStack>
         </VStack>
       </Box>
+      {/* Replacing text box & peter image with whole image on small screens */}
       <Image
         src="/assets/replacement_peter.png"
         alt="peter_fennimore"
