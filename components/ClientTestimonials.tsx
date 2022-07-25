@@ -6,7 +6,7 @@ type Props = {};
 
 const ClientTestimonials = (props: Props) => {
   return (
-    <VStack pt={"4rem"}>
+    <VStack pt={{ base: "0", xl: "4rem" }}>
       <Center>
         <Heading
           mb={"6.875rem"}
