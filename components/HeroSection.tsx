@@ -11,7 +11,6 @@ import {
 import React from "react";
 import NavBar from "./NavBar";
 import { AiFillStar } from "react-icons/ai";
-import { FaBeer } from "react-icons/fa";
 
 type Props = {};
 
