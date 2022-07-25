@@ -9,6 +9,8 @@ import IntegrateSection from "../components/IntegrateSection";
 import FeatureThree from "../components/Features/FeatureThree";
 import FeatureFour from "../components/Features/FeaturFour";
 import FeatureFive from "../components/Features/FeatureFive";
+import ClientTestimonials from "../components/ClientTestimonials";
+import SubscribeSection from "../components/SubscribeSection";
 
 const Home: NextPage = () => {
   return (
@@ -32,7 +34,10 @@ const Home: NextPage = () => {
           <FeatureFour />
         </Box>
         <FeatureFive />
-        <FeatureThree />
+        <ClientTestimonials />
+        <Box bg={"#FAFAFF"} w={"full"}>
+          <SubscribeSection />
+        </Box>
       </VStack>
     </Box>
   );
