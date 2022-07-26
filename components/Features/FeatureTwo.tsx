@@ -20,7 +20,7 @@ const FeatureTwo = (props: Props) => {
       align={"center"}
       spacing={{ base: "2rem" }}
       px={{ base: "3rem", md: "11.87rem" }}
-      pt={{ base: "4rem", xl: "none" }}
+      py={{ base: "4rem", xl: "0" }}
     >
       <VStack align="left" spacing={"1.25rem"}>
         <Heading color={"#4A4A4A"} fontSize={"2.5rem"}>
