@@ -41,7 +41,7 @@ const SubscribeSection = (props: Props) => {
         </Box>
         <Input
           placeholder="Your email"
-          w={"23rem"}
+          w={{ lg: "23rem" }}
           variant={"ghost"}
           py={"0.5rem"}
         />
