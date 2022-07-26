@@ -44,12 +44,7 @@ const NavBar = (props: Props) => {
           position={{ base: "absolute", lg: "inherit" }}
           left={0}
         />
-        <HStack>
-          <Image src="/assets/company_logo.png" alt="teamflow-logo" />
-          <Heading fontSize={"1.875rem"} color={"white"} as="h1">
-            TeamFlow
-          </Heading>
-        </HStack>
+        <Image src="/assets/logo_yellow.svg" alt="teamflow-logo" />
         <HStack spacing={"2.5rem"} display={{ base: "none", xl: "flex" }}>
           <HStack cursor={"pointer"}>
             <Link color={"white"}>Product</Link>
