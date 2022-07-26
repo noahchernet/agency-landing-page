@@ -1,4 +1,12 @@
-import { Box, Stack, VStack, HStack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Stack,
+  VStack,
+  HStack,
+  Text,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
 import React from "react";
 import { BsFacebook, BsYoutube } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
@@ -9,13 +17,18 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <Stack
-      direction={{ base: "column", md: "row" }}
-      wrap="wrap"
+      direction={{ base: "column-reverse", lg: "row" }}
+      px={{ base: "2.5rem", lg: "0" }}
       justify={"space-evenly"}
+      spacing={{ base: "1.75rem", lg: "2.5rem" }}
       w={"full"}
       pb={"3rem"}
     >
-      <VStack spacing={"5rem"} align={"left"}>
+      <VStack
+        spacing={{ base: "1rem", lg: "5rem" }}
+        align={"left"}
+        pt={{ base: "2rem", lg: "0" }}
+      >
         <svg
           width="202"
           height="45"
@@ -56,58 +69,151 @@ const Footer = (props: Props) => {
           </HStack>
         </VStack>
       </VStack>
-      <VStack spacing={"1.75rem"} align={"left"}>
+      <VStack spacing={{ base: "0.25rem", lg: "1.75rem" }} align={"left"}>
         <Text fontWeight="bold" color={"#2B3377"} pb={"0.75rem"}>
           Product
         </Text>
-        <Text color={"#5C5E87"}>Product</Text>
-        <Text color={"#5C5E87"}>Enterprise</Text>
-        <Text color={"#5C5E87"}>Partners</Text>
-        <Text color={"#5C5E87"}>Affiliate</Text>
-        <Text color={"#5C5E87"}>Integrations</Text>
-        <Text color={"#5C5E87"}>Developers</Text>
-        <Text color={"#5C5E87"}>Students</Text>
-        <Text color={"#5C5E87"}>Work OS</Text>
+        <Stack
+          direction={{ base: "row", lg: "column" }}
+          spacing={{ base: "0", lg: "1.75rem" }}
+          align={"flex-start"}
+          wrap="wrap"
+        >
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Product
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Enterprise
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Partners
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Affiliate
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Integrations
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Developers
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Students
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Work OS
+          </Text>
+        </Stack>
       </VStack>
-      <VStack spacing={"1.75rem"} align={"left"}>
+
+      <VStack spacing={{ base: "0.25rem", lg: "1.75rem" }} align={"left"}>
         <Text fontWeight="bold" color={"#2B3377"} pb={"0.75rem"}>
           Team
         </Text>
-        <Text color={"#5C5E87"}>About Us</Text>
-        <Text color={"#5C5E87"}>Contact Us</Text>
-        <Text color={"#5C5E87"}>Careers</Text>
-        <Text color={"#5C5E87"}>Find a Partner</Text>
-        <Text color={"#5C5E87"}>In the News</Text>
+        <Stack
+          direction={{ base: "row", lg: "column" }}
+          spacing={{ base: "0", lg: "1.75rem" }}
+          align={"flex-start"}
+          wrap="wrap"
+        >
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            About Us
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Contact Us
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Careers
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Find a Partner
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            In the News
+          </Text>
+        </Stack>
       </VStack>
-      <VStack spacing={"1.75rem"} align={"left"}>
+
+      <VStack spacing={{ base: "0.25rem", lg: "1.75rem" }} align={"left"}>
         <Text fontWeight="bold" color={"#2B3377"} pb={"0.75rem"}>
           Solutions
         </Text>
-        <Text color={"#5C5E87"}>Project Management</Text>
-        <Text color={"#5C5E87"}>Marketing</Text>
-        <Text color={"#5C5E87"}>CRM and Sales</Text>
-        <Text color={"#5C5E87"}>Software Development</Text>
-        <Text color={"#5C5E87"}>Constructions</Text>
-        <Text color={"#5C5E87"}>Creative Production</Text>
-        <Text color={"#5C5E87"}>Remote Work</Text>
-        <Text color={"#5C5E87"}>HR</Text>
-        <Text color={"#5C5E87"}>IT</Text>
-        <Text color={"#5C5E87"}>See More Solutions</Text>
+        <Stack
+          direction={{ base: "row", lg: "column" }}
+          spacing={{ base: "0", lg: "1.75rem" }}
+          align={"flex-start"}
+          wrap="wrap"
+        >
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Project Management
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Marketing
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            CRM and Sales
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Software Development
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Constructions
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Creative Production
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Remote Work
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            HR
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            IT
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            See More Solutions
+          </Text>
+        </Stack>
       </VStack>
-      <VStack spacing={"1.75rem"} align={"left"}>
+      <VStack spacing={{ base: "0.25rem", lg: "1.75rem" }} align={"left"}>
         <Text fontWeight="bold" color={"#2B3377"} pb={"0.75rem"}>
           Resources
         </Text>
-        <Text color={"#5C5E87"}>Knowledge Base</Text>
-        <Text color={"#5C5E87"}> Guides</Text>
-        <Text color={"#5C5E87"}>Daily Webinars</Text>
-        <Text color={"#5C5E87"}>Community</Text>
-        <Text color={"#5C5E87"}>Customer Stories</Text>
-        <Text color={"#5C5E87"}>Templates</Text>
-        <Text color={"#5C5E87"}>Profesionals Services</Text>
-        <Text color={"#5C5E87"}>Video Tutorials</Text>
-        <Text color={"#5C5E87"}>Blog</Text>
-        <Text color={"#5C5E87"}>Podcast</Text>
+        <Stack
+          direction={{ base: "row", lg: "column" }}
+          spacing={{ base: "0", lg: "1.75rem" }}
+          align={"flex-start"}
+          wrap="wrap"
+        >
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Knowledge Base
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Daily Webinars
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Community
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Customer Stories
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Templates
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Profesionals Services
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Video Tutorials
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Blog
+          </Text>
+          <Text color={"#5C5E87"} pr={{ base: "1rem", lg: "0" }}>
+            Podcast
+          </Text>
+        </Stack>
       </VStack>
     </Stack>
   );
