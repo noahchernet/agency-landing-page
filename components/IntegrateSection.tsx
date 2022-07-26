@@ -1,10 +1,9 @@
 import {
   VStack,
-  HStack,
+  Wrap,
+  WrapItem,
   Stack,
   Heading,
-  Text,
-  Box,
   Image,
 } from "@chakra-ui/react";
 import React from "react";
@@ -28,28 +27,39 @@ const IntegrateSection = (props: Props) => {
           with your existing tools in a few clicks
         </span>
       </Heading>
-      <Stack
-        direction={{ base: "column", md: "row" }}
-        spacing={{ base: "2rem", md: "5.75rem" }}
-      >
-        <Image src={"/assets/company_zoom.png"} alt="zoom_logo" w={"8rem"} />
-        <Image
-          src={"/assets/company_adobe_cloud.png"}
-          alt="adobe_cloud_logo"
-          w={"8rem"}
-        />
-        <Image src={"/assets/company_slack.png"} alt="slack_logo" w={"8rem"} />
-        <Image
-          src={"/assets/company_dropbox.png"}
-          alt="dropbox_logo"
-          w={"8rem"}
-        />
-        <Image
-          src={"/assets/company_gdrive.png"}
-          alt="google_drive_logo"
-          w={"8rem"}
-        />
-      </Stack>
+      <Wrap spacing={"5.75rem"} justify="center">
+        <WrapItem>
+          <Image src={"/assets/company_zoom.png"} alt="zoom_logo" w={"8rem"} />
+        </WrapItem>
+        <WrapItem>
+          <Image
+            src={"/assets/company_adobe_cloud.png"}
+            alt="adobe_cloud_logo"
+            w={"8rem"}
+          />
+        </WrapItem>
+        <WrapItem>
+          <Image
+            src={"/assets/company_slack.png"}
+            alt="slack_logo"
+            w={"8rem"}
+          />
+        </WrapItem>
+        <WrapItem>
+          <Image
+            src={"/assets/company_dropbox.png"}
+            alt="dropbox_logo"
+            w={"8rem"}
+          />
+        </WrapItem>
+        <WrapItem>
+          <Image
+            src={"/assets/company_gdrive.png"}
+            alt="google_drive_logo"
+            w={"8rem"}
+          />
+        </WrapItem>
+      </Wrap>
       <YellowButton text={"View All"} />
     </VStack>
   );
