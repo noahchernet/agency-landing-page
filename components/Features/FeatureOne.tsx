@@ -16,7 +16,7 @@ type Props = {};
 
 function FeatureOne({}: Props) {
   return (
-    <Box mt={"10rem"} px={"11.87rem"}>
+    <Box mt={"10rem"} px={{ base: "3rem", md: "11.87rem" }}>
       <Center>
         <Heading
           mb={"6.875rem"}
@@ -30,11 +30,16 @@ function FeatureOne({}: Props) {
         </Heading>
       </Center>
       <Stack
-        direction={{ base: "column-reverse", md: "row" }}
+        direction={{ base: "column", xl: "row" }}
         align={"center"}
-        spacing={"7.7rem"}
+        mt={{ base: "2rem", xl: "10rem" }}
+        spacing={{ base: "2rem", xl: "4rem", "2xl": "7.7rem" }}
       >
-        <Image src="/assets/our_features.svg" alt="our_features" h="25rem" />
+        <Image
+          src="/assets/our_features.svg"
+          alt="our_features"
+          h={{ base: "20rem", md: "25rem", lg: "30rem", xl: "40rem" }}
+        />
         <Spacer />
         <VStack align="left" spacing={"1.25rem"}>
           <Heading color={"#4A4A4A"} fontSize={"2.5rem"}>
