@@ -26,9 +26,7 @@ const Home: NextPage = () => {
         <CompaniesSection />
         <WhatCanYouDoSection />
         <FeatureOne />
-        {/* <Box px={"11.87rem"} bg={"#FAFAFF"}>
-          <FeatureTwo />
-        </Box> */}
+        <FeatureTwo />
         <IntegrateSection />
         <FeatureThree />
         {/* <Box w={"full"} bg={"#FAFAFF"}> */}

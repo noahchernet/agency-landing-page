@@ -14,9 +14,13 @@ type Props = {};
 const FeatureTwo = (props: Props) => {
   return (
     <Stack
-      direction={{ base: "column-reverse", md: "row" }}
+      w={"full"}
+      bg={"#FAFAFF"}
+      direction={{ base: "column-reverse", xl: "row" }}
       align={"center"}
-      spacing={"7.7rem"}
+      spacing={{ base: "2rem" }}
+      px={{ base: "3rem", md: "11.87rem" }}
+      py={{ base: "4rem", xl: "none" }}
     >
       <VStack align="left" spacing={"1.25rem"}>
         <Heading color={"#4A4A4A"} fontSize={"2.5rem"}>
@@ -39,7 +43,7 @@ const FeatureTwo = (props: Props) => {
             strokeLinecap="round"
           />
         </svg>
-        <Text color={"#575757"} fontSize={"1.5rem"} maxW={"42rem"}>
+        <Text color={"#575757"} fontSize={"1.5rem"} maxW={{ xl: "42rem" }}>
           Get started fast with hundreds of visual and customizable templates -
           or create your own. Use our free online template maker to create
           beautiful template in minutes. Choose from hundreds of pre-made
@@ -48,7 +52,14 @@ const FeatureTwo = (props: Props) => {
         </Text>
       </VStack>
       <Spacer />
-      <Box position={"relative"}>
+      <Image
+        src="assets/feature_section_male.png"
+        alt="man_in_features"
+        mt={"3.5rem"}
+        zIndex={"2"}
+        display={{ base: "block", xl: "none" }}
+      />
+      <Box position={"relative"} display={{ base: "none", xl: "block" }}>
         {/* Timer and small comment */}
         <Box position={"absolute"} top={"3.25rem"} left={"5rem"}>
           <svg
@@ -145,38 +156,6 @@ const FeatureTwo = (props: Props) => {
               d="M84 55.5V42C84 38.6863 81.3137 36 78 36L50 36C46.6863 36 44 38.6863 44 42L44 69C44 72.3137 46.6863 75 50 75H78C81.3137 75 84 72.3137 84 69V64.7625"
               stroke="white"
               strokeWidth="3"
-            />
-          </svg>
-        </Box>
-        {/* Purple background and small 3 circles */}
-        <Box
-          position={"absolute"}
-          bottom={"10rem"}
-          left={"12.5rem"}
-          boxSize={"40%"}
-        >
-          <svg
-            width="322"
-            height="321"
-            viewBox="0 0 430 428"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <ellipse cx="216.5" cy="182" rx="182.5" ry="182" fill="#4B4AEF" />
-            <circle
-              r="12.5"
-              transform="matrix(-1 0 0 1 417.5 48.5)"
-              fill="#5EE2FF"
-            />
-            <circle
-              r="8"
-              transform="matrix(-1 0 0 1 338 420)"
-              fill="#FFED90"
-            />
-            <circle
-              r="10"
-              transform="matrix(-1 0 0 1 10 104)"
-              fill="#55FF8F"
             />
           </svg>
         </Box>
