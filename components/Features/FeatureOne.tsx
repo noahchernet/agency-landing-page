@@ -16,10 +16,13 @@ type Props = {};
 
 function FeatureOne({}: Props) {
   return (
-    <Box mt={"10rem"} px={{ base: "3rem", md: "11.87rem" }}>
+    <Box
+      mt={{ base: "5rem", lg: "7rem" }}
+      px={{ base: "3rem", md: "11.87rem" }}
+    >
       <Center>
         <Heading
-          mb={"6.875rem"}
+          mb={"3.875rem"}
           maxW={"40rem"}
           as={motion.h1}
           initial={{ opacity: 0 }}
@@ -32,7 +35,7 @@ function FeatureOne({}: Props) {
       <Stack
         direction={{ base: "column", xl: "row" }}
         align={"center"}
-        mt={{ base: "2rem", xl: "10rem" }}
+        mt={{ base: "1rem", xl: "3rem" }}
         spacing={{ base: "2rem", xl: "4rem", "2xl": "7.7rem" }}
       >
         <Image
