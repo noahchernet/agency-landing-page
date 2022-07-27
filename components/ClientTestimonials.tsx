@@ -23,7 +23,7 @@ const ClientTestimonials = (props: Props) => {
         src="assets/client_testimonials.png"
         alt="client_testimonials"
         position={"relative"}
-        right={"3.5rem"}
+        right={{ base: "2rem", lg: "3.5rem" }}
       />
     </VStack>
   );
