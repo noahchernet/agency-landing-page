@@ -14,27 +14,23 @@ type Props = {};
 
 function FeatureThree({}: Props) {
   return (
+    <Box
+      mt={{ base: "2rem", xl: "10rem" }}
+      px={{ base: "0.5rem", sm: '1.5rem', md: "11.87rem" }}
+     >
     <Stack
       direction={{ base: "column", xl: "row" }}
       align={"center"}
-      mt={{ base: "2rem", xl: "10rem" }}
       spacing={{ base: "2rem", xl: "4rem", "2xl": "7.7rem" }}
-      px={{ base: "0.5rem", sm: "1.5rem", md: "11.87rem" }}
     >
       <Image
         src="/assets/save_time_picture_woman.png"
         alt="save_time_picture_woman"
-        h={{
-          base: "12rem",
-          sm: "20rem",
-          md: "25rem",
-          lg: "30rem",
-          xl: "40rem",
-        }}
+        h={{ base:'12rem', sm: "20rem", md: "25rem", lg: "30rem", xl: "40rem" }}
       />
       <Spacer />
       <VStack align="left" spacing={"1.25rem"}>
-        <Heading color={"#4A4A4A"} fontSize={"2.5rem"}>
+        <Heading color={"#4A4A4A"} fontSize={{base: '2.1rem', sm:"2.5rem"}}>
           Save time with Automations
         </Heading>
         <svg
@@ -59,9 +55,10 @@ function FeatureThree({}: Props) {
           and focus on what matters. It gives the impression of software that
           its highly automated which implies that it is good for client for who
           want to save time and manage team members easily.
-        </Text>
+        </Text> 
       </VStack>
     </Stack>
+</Box>
   );
 }
 

@@ -28,7 +28,7 @@ const Home: NextPage = () => {
           <FeatureOne />
           <FeatureTwo />
           <IntegrateSection />
-          {/* <FeatureThree /> */}
+          <FeatureThree />
           <FeatureFour />
           <FeatureFive />
           <ClientTestimonials />  
