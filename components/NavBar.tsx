@@ -40,7 +40,6 @@ const NavBar = (props: Props) => {
           }
           display={{ base: "block", xl: "none" }}
           onClick={onOpen}
-          // mr={"auto"}
           position={{ base: "absolute", lg: "inherit" }}
           left={0}
         />
@@ -58,7 +57,8 @@ const NavBar = (props: Props) => {
           <Link color={"white"}>Pricing</Link>
         </HStack>
         <HStack spacing={"2.813rem"} display={{ base: "none", lg: "block" }}>
-          <Button color="#757575" variant="link">
+          {/* bg will be purple on screens < 2xl button text will be white */}
+          <Button color={{ base: "white", "2xl": "#757575" }} variant="link">
             Log In
           </Button>
           <YellowButton text={"Sign Up"} />
