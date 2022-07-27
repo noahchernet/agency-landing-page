@@ -15,7 +15,7 @@ import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
-      <VStack bg="white" w={'100vw'}>
+      <VStack bg="white">
         <HeroSection />
         <VStack
           position={"absolute"}

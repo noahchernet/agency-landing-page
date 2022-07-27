@@ -23,9 +23,6 @@ const SubscribeSection = (props: Props) => {
       justify={"center"}
       pl={{ base: "0.5rem", sm: "1rem" }}
     >
-      <Text color="brand.yellow" fontWeight={"bold"}>
-        Support
-      </Text>
       <Heading color={"#2D3150"} fontWeight={"bold"}>
         Subscribe Newsletter & get
       </Heading>

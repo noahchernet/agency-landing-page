@@ -78,7 +78,7 @@ const NavBar = (props: Props) => {
                 cursor={"pointer"}
                 w={"full"}
                 pt={"2rem"}
-                borderBottom={"0.1rem solid #757575"}
+                borderBottom={"0.1rem solid #d7d7d7"}
               >
                 <Link color={"#4b4aef"}>Product</Link>
                 <DownwardArrow />
@@ -87,7 +87,7 @@ const NavBar = (props: Props) => {
                 cursor={"pointer"}
                 w={"full"}
                 pt={"2rem"}
-                borderBottom={"0.1rem solid #757575"}
+                borderBottom={"0.1rem solid #d7d7d7"}
               >
                 <Link color={"#4b4aef"}>Solution</Link>
                 <DownwardArrow />
@@ -96,7 +96,7 @@ const NavBar = (props: Props) => {
                 color={"#4b4aef"}
                 w={"full"}
                 pt={"2rem"}
-                borderBottom={"0.1rem solid #757575"}
+                borderBottom={"0.1rem solid #d7d7d7"}
               >
                 Enterprise
               </Link>
@@ -104,7 +104,7 @@ const NavBar = (props: Props) => {
                 color={"#4b4aef"}
                 w={"full"}
                 pt={"2rem"}
-                borderBottom={"0.1rem solid #757575"}
+                borderBottom={"0.1rem solid #d7d7d7"}
               >
                 Pricing
               </Link>
