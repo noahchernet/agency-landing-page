@@ -11,7 +11,6 @@ import {
 import React from "react";
 import NavBar from "./NavBar";
 import { AiFillStar } from "react-icons/ai";
-import { FaBeer } from "react-icons/fa";
 
 type Props = {};
 
@@ -203,14 +202,19 @@ const HeroSection = (props: Props) => {
         <Box
           minH={"100vh"}
           bg={"brand.purple"}
-          clipPath={"polygon(0% 0%, 67% 0%, 52% 100%, 0% 100%)"}
+          clipPath={{
+            base: "",
+            "2xl": "polygon(0% 0%, 67% 0%, 52% 100%, 0% 100%)",
+          }}
           zIndex={"-1"}
+          // w={'100%'}
         >
+          {/* Cloudy svgs covering top and bootom of this box */}
           <Image
             src="/assets/first-section-bg-1.svg"
             alt="cloudy-facade"
             w={"50rem"}
-            zIndex={"-1"}
+            zIndex={{ base: "1", "2xl": "-1" }}
           />
           <Image
             src="/assets/first-section-bg-2.svg"
@@ -218,30 +222,33 @@ const HeroSection = (props: Props) => {
             w={"60rem"}
             position={"absolute"}
             top={0}
-            zIndex={"-1"}
+            zIndex={{ base: "1", "2xl": "-1" }}
           />
           <Image
             src="/assets/first-section-bg-3.svg"
             alt="cloudy-facade"
-            w={"60rem"}
+            w={{ base: "95rem", "2xl": "75rem" }}
             position={"absolute"}
-            bottom={"-8rem"}
-            zIndex={"-1"}
+            bottom={"-9rem"}
+            zIndex={{ base: "1", "2xl": "-1" }}
           />
           <Image
             src="/assets/first-section-bg-4.svg"
             alt="cloudy-facade"
-            w={"60rem"}
+            w={{ base: "95rem", "2xl": "75rem" }}
             position={"absolute"}
-            bottom={"-3.5rem"}
-            zIndex={"-1"}
+            bottom={"-4.5rem"}
+            zIndex={{ base: "1", "2xl": "-1" }}
           />
+
+          {/* Floating squares, circles in the middle of this box */}
           <Image
             src="/assets/purple-circle.svg"
             alt="decoration-purple-circle"
             position={"absolute"}
-            left={"33.4rem"}
-            zIndex={"-1"}
+            left={{ base: "", lg: "33.4rem" }}
+            zIndex={{ base: "1", "2xl": "-1" }}
+            display={{ base: "none", lg: "block" }}
           />
           <Image
             src="/assets/blue-square.svg"
@@ -249,7 +256,8 @@ const HeroSection = (props: Props) => {
             position={"absolute"}
             left={"45rem"}
             mt={"2rem"}
-            zIndex={"-1"}
+            zIndex={{ base: "1", "2xl": "-1" }}
+            display={{ base: "none", lg: "block" }}
           />
           <Image
             src="/assets/cursor-blue-left.svg"
@@ -259,6 +267,7 @@ const HeroSection = (props: Props) => {
             top={"28rem"}
             left={"38rem"}
             zIndex={"-1"}
+            display={{ base: "none", lg: "block" }}
           />
           <Image
             src="/assets/orange-triangle.svg"
@@ -267,6 +276,7 @@ const HeroSection = (props: Props) => {
             position={"absolute"}
             bottom={"13rem"}
             left={"35rem"}
+            display={{ base: "none", lg: "block" }}
           />
         </Box>
       </Box>
@@ -274,8 +284,8 @@ const HeroSection = (props: Props) => {
         position={"relative"}
         bottom={"100vh"}
         zIndex={"1"}
-        mt={"6rem"}
-        mx={"10.9rem"}
+        mt={{ base: "3rem", md: "6rem" }}
+        mx={{ base: "1rem", sm: "5rem", md: "11.87rem" }}
       >
         <NavBar />
         <Stack
@@ -293,7 +303,11 @@ const HeroSection = (props: Props) => {
             >
               👋 Welcome to TeamFlow
             </Text>
-            <Heading fontSize="3.4rem" color="white" maxW="45rem">
+            <Heading
+              fontSize={{ base: "2rem", md: "3.4rem" }}
+              color="white"
+              maxW="45rem"
+            >
               Work the way that works for you
             </Heading>
             <svg
@@ -324,13 +338,26 @@ const HeroSection = (props: Props) => {
               px={"2.4rem"}
               _hover={{ bg: "#ffd91d" }}
               fontSize={"xl"}
+              position={{ base: "relative", lg: "inherit" }}
+              top={{ base: "5rem", lg: "0" }}
             >
               Get Started
             </Button>
           </VStack>
-          <VStack spacing={"1.32rem"}>
+          <VStack
+            spacing={"1.32rem"}
+            display={{ base: "none", "2xl": "flex" }}
+          >
             <ProfileLucy />
             <ProfileMark />
+          </VStack>
+          <VStack
+            display={{ base: "none", xl: "flex", "2xl": "none" }}
+            spacing={{ base: "0" }}
+            align={"center"}
+          >
+            <Image src="assets/replacement_lucy.png" alt="lucy" />
+            <Image src="assets/replacement_lucy_comment.png" alt="lucy" />
           </VStack>
         </Stack>
       </Box>

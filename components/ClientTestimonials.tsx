@@ -6,7 +6,7 @@ type Props = {};
 
 const ClientTestimonials = (props: Props) => {
   return (
-    <VStack pt={"4rem"}>
+    <VStack pt={{ base: "0", xl: "4rem" }}>
       <Center>
         <Heading
           mb={"6.875rem"}
@@ -14,6 +14,7 @@ const ClientTestimonials = (props: Props) => {
           as={motion.h1}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          pl={{ base: "0.5rem", sm: "1.5rem" }}
         >
           <span style={{ color: "#565656" }}>Client</span>{" "}
           <span style={{ color: "#FFCA1D" }}>Testimonials</span>
@@ -23,7 +24,7 @@ const ClientTestimonials = (props: Props) => {
         src="assets/client_testimonials.png"
         alt="client_testimonials"
         position={"relative"}
-        right={"3.5rem"}
+        right={{ base: "2rem", lg: "3.5rem" }}
       />
     </VStack>
   );

@@ -1,12 +1,4 @@
-import {
-  Stack,
-  Image,
-  Spacer,
-  VStack,
-  Heading,
-  Text,
-  Box,
-} from "@chakra-ui/react";
+import { Stack, Image, Spacer, VStack, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 
 type Props = {};
@@ -14,9 +6,13 @@ type Props = {};
 const FeatureTwo = (props: Props) => {
   return (
     <Stack
-      direction={{ base: "column-reverse", md: "row" }}
+      w={"full"}
+      bg={"#FAFAFF"}
+      direction={{ base: "column-reverse", xl: "row" }}
       align={"center"}
-      spacing={"7.7rem"}
+      spacing={{ base: "2rem" }}
+      px={{ base: "0.5rem", sm: "1.5rem", md: "11.87rem" }}
+      py={{ base: "4rem", xl: "none" }}
     >
       <VStack align="left" spacing={"1.25rem"}>
         <Heading color={"#4A4A4A"} fontSize={"2.5rem"}>
@@ -39,7 +35,7 @@ const FeatureTwo = (props: Props) => {
             strokeLinecap="round"
           />
         </svg>
-        <Text color={"#575757"} fontSize={"1.5rem"} maxW={"42rem"}>
+        <Text color={"#575757"} fontSize={"1.5rem"} maxW={{ xl: "42rem" }}>
           View data as a map, calendar, timeline, kanban, and more. The
           easy-to-use, visual interface lets any team member jump in and get
           started, no training required.
@@ -49,7 +45,13 @@ const FeatureTwo = (props: Props) => {
       <Image
         src="/assets/calendar_map_timeline.png"
         alt="calendar_map_timeline"
-        h={"35rem"}
+        h={{
+          base: "12rem",
+          sm: "20rem",
+          md: "25rem",
+          lg: "30rem",
+          xl: "40rem",
+        }}
       />
     </Stack>
   );
