@@ -1,4 +1,4 @@
-import { Box, Image, Spacer, Stack, Text, VStack } from "@chakra-ui/react";
+import { Image, Stack, Text, VStack, Wrap, WrapItem } from "@chakra-ui/react";
 import React from "react";
 
 type Props = {};
@@ -37,23 +37,28 @@ const CompaniesSection = (props: Props) => {
         </Text>
       </VStack>
 
-      <Stack
+      <Wrap
         direction={{ base: "row" }}
-        // wrap={"wrap"}
         pt={"0.9rem"}
         spacing={"5.4rem"}
-        align={"center"}
-        w={"max-content"}
+        justify={"center"}
+        w={{ lg: "max-content" }}
       >
-        <Image src="/assets/company_hulu.png" alt="hulu_logo" h={"4rem"} />
-        <Image src="/assets/company_bbc.png" alt="bbc_logo" h={"4rem"} />
-        <Image
-          src="/assets/company_universal.png"
-          alt="universal_logo"
-          h={"4rem"}
-        />
+        <WrapItem>
+          <Image src="/assets/company_hulu.png" alt="hulu_logo" h={"4rem"} />
+        </WrapItem>
+        <WrapItem>
+          <Image src="/assets/company_bbc.png" alt="bbc_logo" h={"4rem"} />
+        </WrapItem>
+        <WrapItem>
+          <Image
+            src="/assets/company_universal.png"
+            alt="universal_logo"
+            h={"4rem"}
+          />
+        </WrapItem>
         <Image src="/assets/company_adobe.png" alt="adobe_logo" h={"4rem"} />
-      </Stack>
+      </Wrap>
     </Stack>
   );
 };
