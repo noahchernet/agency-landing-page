@@ -19,12 +19,18 @@ function FeatureThree({}: Props) {
       align={"center"}
       mt={{ base: "2rem", xl: "10rem" }}
       spacing={{ base: "2rem", xl: "4rem", "2xl": "7.7rem" }}
-      px={{ base: "3rem", md: "11.87rem" }}
+      px={{ base: "0.5rem", sm: "1.5rem", md: "11.87rem" }}
     >
       <Image
         src="/assets/save_time_picture_woman.png"
         alt="save_time_picture_woman"
-        h={{ base: "20rem", md: "25rem", lg: "30rem", xl: "40rem" }}
+        h={{
+          base: "12rem",
+          sm: "20rem",
+          md: "25rem",
+          lg: "30rem",
+          xl: "40rem",
+        }}
       />
       <Spacer />
       <VStack align="left" spacing={"1.25rem"}>

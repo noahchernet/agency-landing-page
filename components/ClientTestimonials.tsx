@@ -14,6 +14,7 @@ const ClientTestimonials = (props: Props) => {
           as={motion.h1}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          pl={{ base: "0.5rem", sm: "1.5rem" }}
         >
           <span style={{ color: "#565656" }}>Client</span>{" "}
           <span style={{ color: "#FFCA1D" }}>Testimonials</span>

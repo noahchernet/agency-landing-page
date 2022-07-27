@@ -22,7 +22,7 @@ function FeatureFive({}: Props) {
       align={"center"}
       spacing={{ base: "4rem", xl: "7.7rem" }}
       mt={"10rem"}
-      px={{ base: "3rem", md: "11.87rem" }}
+      px={{ base: "0.5rem", sm: "1.5rem", md: "11.87rem" }}
       position={"relative"}
     >
       <Box display={{ base: "none", xl: "contents" }}>

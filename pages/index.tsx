@@ -16,21 +16,21 @@ import Footer from "../components/Footer";
 const Home: NextPage = () => {
   return (
       <VStack bg="white" w={'100vw'}>
-        {/* <HeroSection /> */}
+        <HeroSection />
         <VStack
           position={"absolute"}
           top={"100vh"}
           spacing={{ base: "2rem", lg: "8.625rem" }}
           mt={{ base: "2rem", lg: "8.625rem" }}
         >
-          {/* <CompaniesSection />
+          <CompaniesSection />
           <WhatCanYouDoSection />
           <FeatureOne />
           <FeatureTwo />
           <IntegrateSection />
-          <FeatureThree />
+          {/* <FeatureThree /> */}
           <FeatureFour />
-          <FeatureFive />*/}
+          <FeatureFive />
           <ClientTestimonials />  
           <Box bg={"#FAFAFF"} w={"full"}>
             <SubscribeSection />

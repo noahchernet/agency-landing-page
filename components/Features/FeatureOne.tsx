@@ -18,7 +18,7 @@ function FeatureOne({}: Props) {
   return (
     <Box
       mt={{ base: "5rem", lg: "7rem" }}
-      px={{ base: "3rem", md: "11.87rem" }}
+      px={{ base: "0.5rem", sm: "1.5rem", md: "11.87rem" }}
     >
       <Center>
         <Heading
@@ -41,7 +41,13 @@ function FeatureOne({}: Props) {
         <Image
           src="/assets/our_features.svg"
           alt="our_features"
-          h={{ base: "20rem", md: "25rem", lg: "30rem", xl: "40rem" }}
+          h={{
+            base: "12rem",
+            sm: "20rem",
+            md: "25rem",
+            lg: "30rem",
+            xl: "40rem",
+          }}
         />
         <Spacer />
         <VStack align="left" spacing={"1.25rem"}>

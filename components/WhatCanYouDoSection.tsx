@@ -229,13 +229,6 @@ const WhatCanYouDoSection = (props: Props) => {
           </VStack>
         </WrapItem>
       </Wrap>
-      {/* <Stack
-        direction={{ base: "column", md: "row" }}
-        justify={"center"}
-        spacing={"5.625rem"}
-      >
-        
-      </Stack> */}
     </Box>
   );
 };
