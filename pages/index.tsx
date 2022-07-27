@@ -15,15 +15,15 @@ import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
-      <VStack bg="white">
-        <HeroSection />
+      <VStack bg="white" w={'100vw'}>
+        {/* <HeroSection /> */}
         <VStack
           position={"absolute"}
           top={"100vh"}
           spacing={{ base: "2rem", lg: "8.625rem" }}
           mt={{ base: "2rem", lg: "8.625rem" }}
         >
-          <CompaniesSection />
+          {/* <CompaniesSection />
           <WhatCanYouDoSection />
           <FeatureOne />
           <FeatureTwo />
@@ -31,10 +31,10 @@ const Home: NextPage = () => {
           <FeatureThree />
           <FeatureFour />
           <FeatureFive />
-          <ClientTestimonials />
-          <Box bg={"#FAFAFF"} w={"full"}>
+          <ClientTestimonials /> */}
+          {/* <Box bg={"#FAFAFF"} w={"full"}>
             <SubscribeSection />
-          </Box>
+          </Box> */}
           <Footer />
         </VStack>
       </VStack>
