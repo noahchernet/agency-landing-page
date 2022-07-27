@@ -69,7 +69,7 @@ const Footer = (props: Props) => {
           </HStack>
         </VStack>
       </VStack>
-      <VStack spacing={{ base: "-1.25rem", lg: "1.75rem" }} align={"left"}>
+      <VStack spacing={{ base: "-1rem", lg: "1.75rem" }} align={"left"}>
         <Text fontWeight="bold" color={"#2B3377"} pb={"0.75rem"}>
           Product
         </Text>
@@ -79,34 +79,34 @@ const Footer = (props: Props) => {
           align={"flex-start"}
           wrap="wrap"
         >
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Product
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Enterprise
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Partners
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Affiliate
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Integrations
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Developers
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Students
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Work OS
           </Text>
         </Stack>
       </VStack>
 
-      <VStack spacing={{ base: "-1.25rem", lg: "1.75rem" }} align={"left"}>
+      <VStack spacing={{ base: "-1rem", lg: "1.75rem" }} align={"left"}>
         <Text fontWeight="bold" color={"#2B3377"} pb={"0.75rem"}>
           Team
         </Text>
@@ -116,25 +116,25 @@ const Footer = (props: Props) => {
           align={"flex-start"}
           wrap="wrap"
         >
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             About Us
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Contact Us
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Careers
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Find a Partner
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             In the News
           </Text>
         </Stack>
       </VStack>
 
-      <VStack spacing={{ base: "-1.25rem", lg: "1.75rem" }} align={"left"}>
+      <VStack spacing={{ base: "-1rem", lg: "1.75rem" }} align={"left"}>
         <Text fontWeight="bold" color={"#2B3377"} pb={"0.75rem"}>
           Solutions
         </Text>
@@ -144,39 +144,39 @@ const Footer = (props: Props) => {
           align={"flex-start"}
           wrap="wrap"
         >
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Project Management
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Marketing
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             CRM and Sales
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Software Development
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Constructions
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Creative Production
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             Remote Work
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             HR
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             IT
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }} >
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }} >
             See More Solutions
           </Text>
         </Stack>
       </VStack>
-      <VStack spacing={{ base: "-1.25rem", lg: "1.75rem" }} align={"left"}>
+      <VStack spacing={{ base: "-1rem", lg: "1.75rem" }} align={"left"}>
         <Text fontWeight="bold" color={"#2B3377"} pb={"0.75rem"}>
           Resources
         </Text>
@@ -186,31 +186,31 @@ const Footer = (props: Props) => {
           align={"flex-start"}
           wrap="wrap"
         >
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Knowledge Base
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Daily Webinars
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Community
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Customer Stories
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Templates
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Profesionals Services
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Video Tutorials
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Blog
           </Text>
-          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "1rem", lg: "0" }}>
+          <Text color={"#5C5E87"} pr={{ base: "1.5rem", lg: "0" }} pt={{ base: "0.5rem", lg: "0" }}>
             Podcast
           </Text>
         </Stack>
