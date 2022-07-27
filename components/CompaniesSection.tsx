@@ -8,6 +8,7 @@ const CompaniesSection = (props: Props) => {
     <Stack
       px={{ base: "3rem", xl: "11.87rem" }}
       direction={{ base: "column", xl: "row" }}
+      mt={'5rem'}
     >
       <VStack align="left">
         <svg
