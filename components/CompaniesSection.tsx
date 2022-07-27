@@ -1,4 +1,4 @@
-import { Image, Stack, Text, VStack, Wrap, WrapItem } from "@chakra-ui/react";
+import { Image, Spacer, Stack, Text, VStack, Wrap, WrapItem } from "@chakra-ui/react";
 import React from "react";
 
 type Props = {};
@@ -6,11 +6,11 @@ type Props = {};
 const CompaniesSection = (props: Props) => {
   return (
     <Stack
-      px={{ base: "3rem", xl: "11.87rem" }}
+      mx={{ base: "3rem", xl: "11.87rem" }}
       direction={{ base: "column", xl: "row" }}
       mt={"5rem"}
     >
-      <VStack align="left">
+      <VStack align="left" pr={{xl: '7rem'}}>
         <svg
           width="65"
           height="6"
@@ -34,16 +34,16 @@ const CompaniesSection = (props: Props) => {
           fontWeight="bold"
           maxW={{ xl: "33rem" }}
         >
-          See why over 100,000 teams choose TeamFlow
+         Recommended by
         </Text>
       </VStack>
-
+<Spacer />
       <Wrap
         direction={{ base: "row" }}
         pt={"0.9rem"}
         spacing={"5.4rem"}
         justify={"center"}
-        w={{ lg: "max-content" }}
+        // w={{ lg: "max-content" }}
       >
         <WrapItem>
           <Image src="/assets/company_hulu.png" alt="hulu_logo" h={"4rem"} />
