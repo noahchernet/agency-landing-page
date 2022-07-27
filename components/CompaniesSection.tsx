@@ -1,4 +1,12 @@
-import { Image, Spacer, Stack, Text, VStack, Wrap, WrapItem } from "@chakra-ui/react";
+import {
+  Image,
+  Spacer,
+  Stack,
+  Text,
+  VStack,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
 import React from "react";
 
 type Props = {};
@@ -10,7 +18,7 @@ const CompaniesSection = (props: Props) => {
       direction={{ base: "column", xl: "row" }}
       mt={"5rem"}
     >
-      <VStack align="left" pr={{xl: '7rem'}}>
+      <VStack align="left" pr={{ xl: "7rem" }}>
         <svg
           width="65"
           height="6"
@@ -34,10 +42,10 @@ const CompaniesSection = (props: Props) => {
           fontWeight="bold"
           maxW={{ xl: "33rem" }}
         >
-         Recommended by
+          Recommended by
         </Text>
       </VStack>
-<Spacer />
+      <Spacer />
       <Wrap
         direction={{ base: "row" }}
         pt={"0.9rem"}

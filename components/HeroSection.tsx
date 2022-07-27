@@ -284,7 +284,7 @@ const HeroSection = (props: Props) => {
         position={"relative"}
         bottom={"100vh"}
         zIndex={"1"}
-        mt={{base: '3rem', md:"6rem"}}
+        mt={{ base: "3rem", md: "6rem" }}
         mx={{ base: "1rem", sm: "5rem", md: "11.87rem" }}
       >
         <NavBar />

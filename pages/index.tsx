@@ -15,29 +15,29 @@ import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
-      <VStack bg="white">
-        <HeroSection />
-        <VStack
-          position={"absolute"}
-          top={"100vh"}
-          spacing={{ base: "2rem", lg: "8.625rem" }}
-          mt={{ base: "2rem", lg: "8.625rem" }}
-        >
-          <CompaniesSection />
-          <WhatCanYouDoSection />
-          <FeatureOne />
-          <FeatureTwo />
-          <IntegrateSection />
-          <FeatureThree />
-          <FeatureFour />
-          <FeatureFive />
-          <ClientTestimonials />  
-          <Box bg={"#FAFAFF"} w={"full"}>
-            <SubscribeSection />
-          </Box>
-          <Footer />
-        </VStack>
+    <VStack bg="white">
+      <HeroSection />
+      <VStack
+        position={"absolute"}
+        top={"100vh"}
+        spacing={{ base: "2rem", lg: "8.625rem" }}
+        mt={{ base: "2rem", lg: "8.625rem" }}
+      >
+        <CompaniesSection />
+        <WhatCanYouDoSection />
+        <FeatureOne />
+        <FeatureTwo />
+        <IntegrateSection />
+        <FeatureThree />
+        <FeatureFour />
+        <FeatureFive />
+        <ClientTestimonials />
+        <Box bg={"#FAFAFF"} w={"full"}>
+          <SubscribeSection />
+        </Box>
+        <Footer />
       </VStack>
+    </VStack>
   );
 };
 
