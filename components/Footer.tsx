@@ -18,7 +18,7 @@ const Footer = (props: Props) => {
   return (
     <Stack
       direction={{ base: "column-reverse", lg: "row" }}
-      pl={{ base: "0.5rem", sm:'2.5rem', lg: "0" }}
+      pl={{ base: "0.5rem", sm: "2.5rem", lg: "0" }}
       justify={"space-evenly"}
       spacing={{ base: "1.75rem", lg: "2.5rem" }}
       w={"full"}
@@ -61,7 +61,7 @@ const Footer = (props: Props) => {
           <Text color={"#2B3377"} fontWeight={"bold"}>
             Social Media
           </Text>
-          <HStack spacing={{base: '0.7rem', sm:"1.4rem"}} wrap="wrap">
+          <HStack spacing={{ base: "0.7rem", sm: "1.4rem" }} wrap="wrap">
             <BsFacebook color={"#373C59"} size={"2.56rem"} />
             <RiInstagramFill color={"#373C59"} size={"2.9rem"} />
             <AiFillTwitterCircle color={"#373C59"} size={"2.9rem"} />

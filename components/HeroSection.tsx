@@ -247,7 +247,7 @@ const HeroSection = (props: Props) => {
             position={"absolute"}
             left={{ base: "", lg: "33.4rem" }}
             zIndex={{ base: "1", "2xl": "-1" }}
-            display={{base: 'none', lg: 'block'}}
+            display={{ base: "none", lg: "block" }}
           />
           <Image
             src="/assets/blue-square.svg"
@@ -256,7 +256,7 @@ const HeroSection = (props: Props) => {
             left={"45rem"}
             mt={"2rem"}
             zIndex={{ base: "1", "2xl": "-1" }}
-            display={{base: 'none', lg: 'block'}}
+            display={{ base: "none", lg: "block" }}
           />
           <Image
             src="/assets/cursor-blue-left.svg"
@@ -266,7 +266,7 @@ const HeroSection = (props: Props) => {
             top={"28rem"}
             left={"38rem"}
             zIndex={"-1"}
-            display={{base: 'none', lg: 'block'}}
+            display={{ base: "none", lg: "block" }}
           />
           <Image
             src="/assets/orange-triangle.svg"
@@ -275,7 +275,7 @@ const HeroSection = (props: Props) => {
             position={"absolute"}
             bottom={"13rem"}
             left={"35rem"}
-            display={{base: 'none', lg: 'block'}}
+            display={{ base: "none", lg: "block" }}
           />
         </Box>
       </Box>
@@ -284,7 +284,7 @@ const HeroSection = (props: Props) => {
         bottom={"100vh"}
         zIndex={"1"}
         mt={"6rem"}
-        mx={{ base:"1rem", sm: "5rem", md: "11.87rem" }}
+        mx={{ base: "1rem", sm: "5rem", md: "11.87rem" }}
       >
         <NavBar />
         <Stack
@@ -337,8 +337,8 @@ const HeroSection = (props: Props) => {
               px={"2.4rem"}
               _hover={{ bg: "#ffd91d" }}
               fontSize={"xl"}
-              position={{base: 'relative', lg: 'inherit'}}
-              top={{base:'5rem', lg: '0'}}
+              position={{ base: "relative", lg: "inherit" }}
+              top={{ base: "5rem", lg: "0" }}
             >
               Get Started
             </Button>
