@@ -207,7 +207,6 @@ const HeroSection = (props: Props) => {
             "2xl": "polygon(0% 0%, 67% 0%, 52% 100%, 0% 100%)",
           }}
           zIndex={"-1"}
-          // w={'100%'}
         >
           {/* Cloudy svgs covering top and bootom of this box */}
           <Image
@@ -284,7 +283,7 @@ const HeroSection = (props: Props) => {
         position={"relative"}
         bottom={"100vh"}
         zIndex={"1"}
-        mt={{ base: "3rem", md: "6rem" }}
+        mt={{ base: "1rem", md: "6rem" }}
         mx={{ base: "1rem", sm: "5rem", md: "11.87rem" }}
       >
         <NavBar />
