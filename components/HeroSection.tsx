@@ -300,7 +300,7 @@ const HeroSection = (props: Props) => {
               pr={"1.9rem"}
               borderRadius={"0.625rem"}
             >
-              👋 Welcome to TeamFlow
+              👋 Welcome to GoldBolt
             </Text>
             <Heading
               fontSize={{ base: "2rem", md: "3.4rem" }}

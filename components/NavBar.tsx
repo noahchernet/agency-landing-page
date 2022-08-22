@@ -1,32 +1,23 @@
-import React from "react";
 import {
-  Box,
-  Button,
-  Center,
-  Heading,
-  HStack,
-  IconButton,
-  Image,
-  Link,
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  useDisclosure,
-  VStack,
+    Button,
+    Center, Drawer,
+    DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter,
+    DrawerHeader,
+    DrawerOverlay, HStack,
+    IconButton,
+    Image,
+    Link, useDisclosure,
+    VStack
 } from "@chakra-ui/react";
+import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 import DownwardArrow from "./Buttons/DownwardArrow";
 import YellowButton from "./Buttons/YellowButton";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 type Props = {};
 
 const NavBar = (props: Props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef();
 
   return (
     <>

@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <title>TeamFlow</title>
+        <title>GoldBolt</title>
         <link
           rel="icon"
           type="image/png"

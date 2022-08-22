@@ -74,7 +74,7 @@ function FeatureOne({}: Props) {
           <Text color={"#575757"} fontSize={"1.5rem"}>
             Planning, tracking and delivering your team&apos;s best work has
             never been easier. An integrated workspace that&apos;s simple to
-            use, TeamFlow lets you spend less time managing your work and more
+            use, GoldBolt lets you spend less time managing your work and more
             time actually doing it.
           </Text>
         </VStack>
